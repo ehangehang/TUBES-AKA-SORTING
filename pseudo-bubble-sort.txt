@@ -1,0 +1,18 @@
+procedure BubbleSort(in/out arrInt: []of integer, in n: integer)
+kamus
+    i, j, temp: integer
+algoritma
+    i <- 0
+    j <- 0
+    while i < n-1 do
+        while j < n-i-1 do
+            if arrInt[j] > arrInt[j+1] then
+                temp <- arrInt[j]
+                arrInt[j] <- arrInt[j+1]
+                arrInt[j+1] <- temp
+            endif
+            j <- j+1
+        endwhile
+        i <- i+1
+    endwhile
+endprocedure
